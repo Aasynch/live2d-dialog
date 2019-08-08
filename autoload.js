@@ -1,48 +1,87 @@
-//注意：live2d_path参数应使用绝对路径
-const live2d_path = "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/";
-//const live2d_path = "/live2d-widget/";
+$(window).on("load", function () {
+	loadlive2d("live2d", "./model/haruto/haruto.model.json");
+    //loadlive2d("live2d", "./model/neptune/model.json");
+	var current = {
+        body: document.getElementsByClassName("live2d-container left")[0],
+		canvas: document.getElementById("live2d")
+    };
 
-//加载waifu.css
-$("<link>").attr({ href: live2d_path + "waifu.css", rel: "stylesheet" }).appendTo("head");
+	var modules = {
+		
+		create: function (tag, prop) {
+			var e = document.createElement(tag);
+			if (prop.class) e.className = prop.class;
+			return e;
+        },
 
-//加载live2d.min.js
-$.ajax({
-	url: live2d_path + "live2d.min.js",
-	dataType: "script",
-	cache: true
+        rand: function (arr) {
+			return arr[Math.floor(Math.random() * arr.length + 1) - 1];
+        },
+
+		render: function (text) {
+			if (text.constructor == Array) {
+				dialog.innerText = modules.rand(text);
+			} else if (text.constructor == String) {
+				dialog.innerText = text;
+			} else {
+				dialog.innerText = "输入出现问题了 嘤嘤嘤～～";
+			}
+
+			dialog.classList.add("active");
+
+			clearTimeout(this.t);
+			this.t = setTimeout(function () {
+				dialog.classList.remove("active");
+			}, 3000);
+        },
+
+		destroy: function() {
+			current.body.parentNode.removeChild(current.body);
+		}
+	};
+
+	var elements = {
+		home: modules.create("span", {class: "live2d-button-home"}),
+		language: modules.create("span", {class: "live-2d-button-language"}),
+		close: modules.create("span", {class: "live-2d-button-close"})
+	};
+
+	var dialog = modules.create("div", {class: "live2d-dialog"});
+	current.body.appendChild(dialog);
+
+	var action = {
+		touch: function() {
+			current.canvas.onclick = function () {
+				modules.render(["是…是不小心碰到了吧…", "我可要报警了！⌇●﹏●⌇", "你在干什么？！"]);
+			};
+
+			current.canvas.onmouseover = function () {
+				modules.render(["干嘛呢你，快把手拿开～～", "鼠…鼠标放错地方了！", "你要干嘛呀？", "喵喵喵？", "怕怕(ノ≧∇≦)ノ", "非礼呀！救命！", "这样的话，只能使用武力了！", "我要生气了哦", "不要动手动脚的！", "真…真的是不知羞耻！", "Hentai！"]);
+            }
+		}
+	};
+
+	action.touch();
+
+
+    var body = current.body;
+    body.onmousedown = function () {
+    	var location = {
+            x: event.clientX - this.offsetLeft,
+            y: event.clientY - this.offsetTop
+        };
+
+        function move(e) {
+            body.classList.add("active");
+            body.classList.remove("right");
+            body.style.left = (event.clientX - location.x) + 'px';
+            body.style.top  = (event.clientY - location.y) + 'px';
+        }
+
+        document.addEventListener("mousemove", move);
+        document.addEventListener("mouseup", function () {
+            body.classList.remove("active");
+            document.removeEventListener("mousemove", move);
+        });
+    };
 });
-
-//加载waifu-tips.js
-$.ajax({
-	url: live2d_path + "waifu-tips.js",
-	dataType: "script",
-	cache: true
-});
-
-//初始化看板娘，会自动加载指定目录下的waifu-tips.json
-$(window).on("load", function() {
-	initWidget(live2d_path + "waifu-tips.json", "https://live2d.fghrsh.net/api");
-});
-//initWidget第一个参数为waifu-tips.json的路径
-//第二个参数为api地址（无需修改）
-//api后端可自行搭建，参考https://github.com/fghrsh/live2d_api
-
-console.log(`
-  く__,.ヘヽ.        /  ,ー､ 〉
-           ＼ ', !-─‐-i  /  /´
-           ／｀ｰ'       L/／｀ヽ､
-         /   ／,   /|   ,   ,       ',
-       ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
-        ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
-          !,/7 '0'     ´0iソ|    |
-          |.从"    _     ,,,, / |./    |
-          ﾚ'| i＞.､,,__  _,.イ /   .i   |
-            ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
-              | |/i 〈|/   i  ,.ﾍ |  i  |
-             .|/ /  ｉ：    ﾍ!    ＼  |
-              kヽ>､ﾊ    _,.ﾍ､    /､!
-              !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
-              ﾚ'ヽL__|___i,___,ンﾚ|ノ
-                  ﾄ-,/  |___./
-                  'ｰ'    !_,.:
-`);

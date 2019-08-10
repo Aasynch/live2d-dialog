@@ -2,58 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bebda73-7ec2-42b1-9880-c514f93fbda4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/moc/haruto.2048/texture_00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/moc/haruto.moc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/nepmaid/model.moc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/nepmaid/textures/00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/nepmaid/textures/01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/nepmaid/textures/02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/model.moc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/nep_slide_head_2.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/nep_touch_head_1.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/textures/0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/textures/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/textures/normal_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/voice/001.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/voice/007.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/voice/013.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/voice/014.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/voice/101.ogg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/haruto.model.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/haruto.physics.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/01.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/02.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/03.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/04.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/05.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/06.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/07.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/08.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/09.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/haruto/mtn/idle_02.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/nepmaid/nepmaid.model.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/expressions/deformed.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/expressions/enjoy.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/expressions/happy.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/expressions/kira.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/expressions/normal.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/expressions/unhappy.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/model.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/idle_00.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/idle_01.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/idle_02.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/nep_touch_belly_1.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/nep_touch_belly_2.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/nep_touch_boobs_1.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/refuse.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/shake.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/smile.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/neptune/motions/tilt_head.mtn" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/live2d.min.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/close.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/home.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/language.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autoload.js" afterPath="$PROJECT_DIR$/autoload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -74,18 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="haruto.model.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/haruto/haruto.model.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="105">
+              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -94,8 +39,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            <state relative-caret-position="589">
+              <caret line="91" column="47" lean-forward="true" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -104,8 +49,8 @@
       <file leaf-file-name="autoload.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/autoload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="330">
+              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -147,8 +92,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="768" />
-    <option name="y" value="133" />
+    <option name="x" value="518" />
+    <option name="y" value="124" />
     <option name="width" value="1388" />
     <option name="height" value="872" />
   </component>
@@ -192,43 +137,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neptune" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live2d-dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live2d-dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nepmaid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live2d-dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="live2d-dialog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="source" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,6 +157,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
       <recent name="$PROJECT_DIR$/model" />
       <recent name="$PROJECT_DIR$/model/haruto" />
     </key>
@@ -336,12 +246,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565112380458</updated>
-      <workItem from="1565112381572" duration="26710000" />
+      <workItem from="1565112381572" duration="37225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26710000" />
+    <option name="totallyTimeSpent" value="37225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,7 +263,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="768" y="133" width="1388" height="872" extended-state="0" />
+    <frame x="518" y="124" width="1388" height="872" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19092219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -398,26 +308,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/waifu-tips.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/neptune/∂¡Œ“ ReadMe.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/waifu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="154" column="59" lean-forward="true" selection-start-line="154" selection-start-column="59" selection-end-line="154" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -508,10 +402,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/waifu-tips.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="-523">
+          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/waifu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -524,18 +426,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/close.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/language.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/test1.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="91" column="47" lean-forward="true" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/autoload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="330">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding />
         </state>
       </provider>

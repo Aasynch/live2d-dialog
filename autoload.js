@@ -3,9 +3,15 @@ $(window).on("load", function () {
     //loadlive2d("live2d", "./model/neptune/model.json");
 	var current = {
         body: document.getElementsByClassName("live2d-container left")[0],
-		canvas: document.getElementById("live2d")
+		canvas: document.getElementById("live2d"),
+		dialog: document.getElementsByClassName("live2d-dialog")[0],
+		button_home: document.getElementsByClassName("live2d-button-home")[0],
+		button_language: document.getElementsByClassName("live2d-button-language")[0],
+		button_close: document.getElementsByClassName("live2d-button-close")[0],
+		root: "https://aasynch.me"
     };
 
+	console.log(current.root);
 	var modules = {
 		
 		create: function (tag, prop) {
@@ -20,18 +26,18 @@ $(window).on("load", function () {
 
 		render: function (text) {
 			if (text.constructor == Array) {
-				dialog.innerText = modules.rand(text);
+				current.dialog.innerText = modules.rand(text);
 			} else if (text.constructor == String) {
-				dialog.innerText = text;
+				current.dialog.innerText = text;
 			} else {
-				dialog.innerText = "输入出现问题了 嘤嘤嘤～～";
+				current.dialog.innerText = "输入出现问题了 嘤嘤嘤～～";
 			}
 
-			dialog.classList.add("active");
+			current.dialog.classList.add("active");
 
 			clearTimeout(this.t);
 			this.t = setTimeout(function () {
-				dialog.classList.remove("active");
+				current.dialog.classList.remove("active");
 			}, 3000);
         },
 
@@ -39,15 +45,6 @@ $(window).on("load", function () {
 			current.body.parentNode.removeChild(current.body);
 		}
 	};
-
-	var elements = {
-		home: modules.create("span", {class: "live2d-button-home"}),
-		language: modules.create("span", {class: "live-2d-button-language"}),
-		close: modules.create("span", {class: "live-2d-button-close"})
-	};
-
-	var dialog = modules.create("div", {class: "live2d-dialog"});
-	current.body.appendChild(dialog);
 
 	var action = {
 		touch: function() {
@@ -58,10 +55,32 @@ $(window).on("load", function () {
 			current.canvas.onmouseover = function () {
 				modules.render(["干嘛呢你，快把手拿开～～", "鼠…鼠标放错地方了！", "你要干嘛呀？", "喵喵喵？", "怕怕(ノ≧∇≦)ノ", "非礼呀！救命！", "这样的话，只能使用武力了！", "我要生气了哦", "不要动手动脚的！", "真…真的是不知羞耻！", "Hentai！"]);
             }
-		}
+		},
+
+        button_home: function () {
+			current.button_home.onclick = function () {
+				location.href = current.root;
+            }
+
+            current.button_home.onmouseover = function () {
+				modules.render("点击这里回到首页!");
+            }
+        },
+
+        button_close: function () {
+			current.button_close.onclick = function () {
+				modules.destroy();
+            };
+
+            current.button_close.onmouseover = function () {
+				modules.render("还..还能在见到你嘛? T T");
+            }
+        }
 	};
 
 	action.touch();
+	action.button_home();
+	action.button_close();
 
 
     var body = current.body;

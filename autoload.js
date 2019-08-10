@@ -60,12 +60,22 @@ $(window).on("load", function () {
         button_home: function () {
 			current.button_home.onclick = function () {
 				location.href = current.root;
-            }
+            };
 
             current.button_home.onmouseover = function () {
 				modules.render("点击这里回到首页!");
             }
         },
+
+        button_language: function () {
+			current.button_language.onclick = function () {
+
+            };
+
+			current.button_language.onmouseover = function () {
+				modules.render("让我来变个魔法！");
+            }
+        }
 
         button_close: function () {
 			current.button_close.onclick = function () {

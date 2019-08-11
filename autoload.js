@@ -49,12 +49,11 @@ $(window).on("load", function () {
 	var action = {
 		touch: function() {
 			current.canvas.onclick = function () {
-				modules.render(["是…是不小心碰到了吧…", "我可要报警了！⌇●﹏●⌇", "你在干什么？！"]);
+                var a1 = ["干嘛呢你，快把手拿开～～", "鼠…鼠标放错地方了！", "你要干嘛呀？", "喵喵喵？", "怕怕(ノ≧∇≦)ノ", "非礼呀！救命！", "这样的话，只能使用武力了！", "我要生气了哦", "不要动手动脚的！", "真…真的是不知羞耻！", "Hentai！"];
+				var a2 = ["是…是不小心碰到了吧…", "我可要报警了！⌇●﹏●⌇", "你在干什么？！"];
+				var a3 = a1.concat(a2);
+				modules.render(a3);
 			};
-
-			current.canvas.onmouseover = function () {
-				modules.render(["干嘛呢你，快把手拿开～～", "鼠…鼠标放错地方了！", "你要干嘛呀？", "喵喵喵？", "怕怕(ノ≧∇≦)ノ", "非礼呀！救命！", "这样的话，只能使用武力了！", "我要生气了哦", "不要动手动脚的！", "真…真的是不知羞耻！", "Hentai！"]);
-            }
 		},
 
         button_home: function () {
@@ -69,13 +68,17 @@ $(window).on("load", function () {
 
         button_language: function () {
 			current.button_language.onclick = function () {
-
+				if (document.body.classList.contains("night")) {
+					document.body.classList.remove("night");
+				} else {
+					document.body.classList.add("night");
+				}
             };
 
 			current.button_language.onmouseover = function () {
 				modules.render("让我来变个魔法！");
             }
-        }
+        },
 
         button_close: function () {
 			current.button_close.onclick = function () {
@@ -90,6 +93,7 @@ $(window).on("load", function () {
 
 	action.touch();
 	action.button_home();
+	action.button_language();
 	action.button_close();
 
 
